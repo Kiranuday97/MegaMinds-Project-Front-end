@@ -3,8 +3,8 @@ import './navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/logo.png";
 import { links } from '../data';
-import { GoThreeBars } from "react-icons/go";
-import { MdOutlineClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
+import { MdMenu, MdOutlineClose } from "react-icons/md";
 import { RiShoppingCartFill } from "react-icons/ri"
 import { TbUserCircle } from "react-icons/tb";
 import { useSelector, useDispatch } from 'react-redux';
@@ -135,7 +135,7 @@ const Navbar = () => {
         
        
         <button className="nav__toggle-btn" onClick={toggleNav}>
-          {isNavShowing ? <MdOutlineClose /> : <GoThreeBars />}
+          {isNavShowing ? <MdOutlineClose /> : <MdMenu />}
         </button>
       </div>
     </nav>
