@@ -23,7 +23,7 @@ const Signup = () => {
         name,
         email,
         password,
-      }).then(      toast.success(response.data.message)
+      }).then(toast.success(response.data.message)
       );
 
       console.log(response.data);
