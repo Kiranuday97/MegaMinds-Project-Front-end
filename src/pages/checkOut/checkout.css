@@ -1,0 +1,13 @@
+
+
+.check-outcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 105px;
+    margin-top: 150px;
+    
+  }
+  
+  .check-outcontainer img {
+    width: 100px;
+  }

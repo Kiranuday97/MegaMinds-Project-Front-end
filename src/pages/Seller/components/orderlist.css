@@ -1,0 +1,25 @@
+
+.list-container{
+    margin-top: 150px;
+    margin: 50px;
+}
+.order-list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 100px;
+   
+    
+}
+
+.order-list-container tr{
+    border-bottom: 1px solid rgb(165, 152, 152);
+    border-left: none;
+    border-right: none;
+    border-image: linear-gradient(to right, transparent, rgb(237, 237, 237), transparent);
+
+}
+.order-list-container img{
+    width: 90px;
+}

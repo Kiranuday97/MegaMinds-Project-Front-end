@@ -1,0 +1,74 @@
+
+
+.check-outcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 150px; */
+    margin-top: 150px;
+    
+  }
+  
+  .column {
+    padding: 25px;
+    width: 100%;
+  }
+  
+
+  .column img{
+    width: 90px;
+    height: 100px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 550PX;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    opacity: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  } */
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .check-list{
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .radio{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+
+  }
+
+  input[type="radio"] {
+    width: 20px;
+
+  }
+.amount-div{
+  display: flex;
+}
