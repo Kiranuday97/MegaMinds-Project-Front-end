@@ -35,7 +35,7 @@ export const removeCartItem = (productId) => {
   return async (dispatch) => {
     try {
       // Send request to remove the cart item
-      await axios.delete(`${process.env.REACT_APP_SERVER_URL}`/api/cart/${productId}`);
+      await axios.delete(`${process.env.REACT_APP_SERVER_URL}/api/cart/${productId}`);
 
       // Dispatch the success action with the removed product ID
       dispatch({
