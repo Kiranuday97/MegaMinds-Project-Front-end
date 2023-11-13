@@ -15,7 +15,7 @@ export const fetchCartItems = () => {
       };
 
       // Fetch cart items from the server
-      const response = await axios.get('http://localhost:4000/api/cart', config);
+      const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}`, config);
       const items = response.data;
 
       // Dispatch the success action with the fetched cart items
@@ -35,7 +35,7 @@ export const removeCartItem = (productId) => {
   return async (dispatch) => {
     try {
       // Send request to remove the cart item
-      await axios.delete(`http://localhost:4000/api/cart/${productId}`);
+      await axios.delete(`${process.env.REACT_APP_SERVER_URL}`/api/cart/${productId}`);
 
       // Dispatch the success action with the removed product ID
       dispatch({
