@@ -11,34 +11,37 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleFormSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (password !== confirmPassword) {
-      alert("Passwords do not match");
-      return;
-    }
+  if (password !== confirmPassword) {
+    alert("Passwords do not match");
+    return;
+  }
 
-    try {
-      const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/signup`, {
-        name,
-        email,
-        password,
-      }).then(toast.success(response.data.message)
-      );
+  try {
+    const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/signup`, {
+      name,
+      email,
+      password,
+    });
 
-      console.log(response.data);
+    // Display success message using toast
+    toast.success(response.data.message);
 
-      setName("");
-      setEmail("");
-      setPassword("");
-      setConfirmPassword("");
-      
-    } catch (error) {
-      console.error(error);
-      toast.error("Something went Wrong") 
+    console.log(response.data);
 
-    }
-  };
+    setName("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
+    
+  } catch (error) {
+    console.error(error);
+    // Display error message using toast
+    toast.error("Something went wrong");
+  }
+};
+
 
   return (
     <div className="signup-container">
