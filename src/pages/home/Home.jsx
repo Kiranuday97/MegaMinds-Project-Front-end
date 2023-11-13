@@ -73,7 +73,9 @@ const Home = () => {
                 .filter((product) => product.category === category)
                 .map((product, index) => (
                   <div key={index} className="slidable-card">
-                    <img src={`${process.env.REACT_APP_SERVER_URL}/${product.imageUrl}`} alt={product.name} />
+                   <div className='img-div'>
+                     <img src={`${process.env.REACT_APP_SERVER_URL}/${product.imageUrl}`} alt={product.name} />
+                     </div>
                     <div className="card-details">
                       <h4 className="card-title">{product.name}</h4>
                       <h3 className="card-title">Rs. {product.price}</h3>
