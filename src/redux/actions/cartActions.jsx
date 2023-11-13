@@ -15,7 +15,7 @@ export const fetchCartItems = () => {
       };
 
       // Fetch cart items from the server
-      const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}`, config);
+      const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/cart`, config);
       const items = response.data;
 
       // Dispatch the success action with the fetched cart items
